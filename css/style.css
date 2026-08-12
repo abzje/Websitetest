@@ -102,7 +102,7 @@ img {
 }
 
 .map-text {
-    width: 25%;
+    width: 40%;
     margin: 10px 20px;
 }
 
@@ -188,6 +188,9 @@ img {
 .text-center{
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
 
 /*Background*/
 .bg-primary {
@@ -207,4 +210,15 @@ img {
 .bg-light {
     background:var(--light-color) ;
     color: #333;
+}
+
+/*Interaction*/
+#description, .flip {
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#description {
+    display: none;
 }
