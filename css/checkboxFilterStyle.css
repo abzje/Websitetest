@@ -1,7 +1,3 @@
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 /* Centre la section de la page sous la navbar */
 .checkboxFilter {
     padding: 20px;
@@ -53,12 +49,13 @@
     Enfin, c'est ici que la magie opère. 
     le '~' permet de cibler tous les éléments situés après un autre élément, à condition qu'ils partagent le même parent.
     ':checked' et ':not(:checked)' permettent d'accéder au statut de la checkbox
+
+    /!\ attention, pour que cela fonctionne la div 'items' et les checkbox ne doivent pas être séparer, sinon le '~' ne marche pas
 */
 [value="poesie"]:checked ~ .items .item[data-category="poesie"],
 [value="metaphore"]:checked ~ .items .item[data-category="metaphore"],
 [value="fanfic"]:checked ~ .items .item[data-category="fanfic"] 
 {
-    background: yellow;
     display: block;
     animation: fadeIn .25s;
 }

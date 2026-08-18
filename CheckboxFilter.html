@@ -43,18 +43,16 @@
         </nav>
         <!-- code from https://codepen.io/dereksheppard/pen/LYVWpoE -->
         <section class="checkboxFilter">
-            <div class="filtersBar">
-                <!-- Checkboxes -->
-                <h1 class="text-xl text-left">Filtres</h1>
-                <label for="poesie">Poésie</label> 
-                <input name="filter" class="input" type="checkbox" id="poesie" value="poesie" checked>
-                
-                <label for="metaphore">Métaphore</label> 
-                <input name="filter" class="input" type="checkbox" id="metaphore" value="metaphore" checked>
-                
-                <label for="fanfic">Fan-Fiction</label> 
-                <input name="filter" class="input" type="checkbox" id="fanfic" value="fanfic" checked>
-            </div>                
+            <!-- Checkboxes -->
+            <h1 class="text-xl text-left">Filtres</h1>
+            <label for="poesie">Poésie</label> 
+            <input name="filter" class="input" type="checkbox" id="poesie" value="poesie" checked>
+            
+            <label for="metaphore">Métaphore</label> 
+            <input name="filter" class="input" type="checkbox" id="metaphore" value="metaphore" checked>
+            
+            <label for="fanfic">Fan-Fiction</label> 
+            <input name="filter" class="input" type="checkbox" id="fanfic" value="fanfic" checked>
             <!-- 
                 Elements a filtrer 
                 
@@ -67,16 +65,19 @@
                 Ici pour simplifier les éléments contiennent simplement du texte mais on peut imaginer que c'est le titre de l'élement et que cliquer dessus ouvre le texte complet
             -->
             <div class="items" aria-live="polite">
-                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°1</p></div>
-                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore intéressante</p></div>
-                <div class="item fanfic" data-category="fanfic"><p class="text-lg">FCK PLTVR</p></div>
-                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°2</p></div>
-                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore intriguante</p></div>
-                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°3</p></div>
-                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore surprenante</p></div>
-                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°4</p></div>
-                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore alambiquée</p></div>
-                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°5</p></div>
+                <div class="item poesie" data-category="poesie">
+                    <p class="text-md">Poéme n°1</p>
+                    <p class="text-sm">La première ligne du poème pour donner envie de lire la suite</p>
+                </div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-md">Métaphore intéressante</p></div>
+                <div class="item fanfic" data-category="fanfic"><p class="text-md">FCK PLTVR</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-md">Poéme n°2</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-md">Métaphore intriguante</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-md">Poéme n°3</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-md">Métaphore surprenante</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-md">Poéme n°4</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-md">Métaphore alambiquée</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-md">Poéme n°5</p></div>
             </div>
         </section>
     </body>
