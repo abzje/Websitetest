@@ -1,0 +1,72 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Centre la section de la page sous la navbar */
+.checkboxFilter {
+    padding: 20px;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.input {
+    margin-bottom: 4rem;
+}
+
+/* Classe qui contient tous les item ici c'est une grille avec une seule colonne*/
+.items {
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
+/* Classe commune à tous les item pour l'apparence générale des lignes*/
+.item {
+    font-weight: bold;
+    padding-left: 15px;
+    color: #eee;
+}
+
+/* Ces classes gèrent l'apparende de chaque type d'item ici pour rester simple et rendre l'exemple visible ces des couleurs moches mais ça peut être + détaillée */
+.poesie {
+    background: red;
+}
+
+.metaphore {
+    background: green;
+}
+
+.fanfic {
+    background: blue;
+}
+
+/* Keyframes permet de créer des animation qu'on peut ensuite utiliser */
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;} 
+}
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+}
+
+/* 
+    Enfin, c'est ici que la magie opère. 
+    le '~' permet de cibler tous les éléments situés après un autre élément, à condition qu'ils partagent le même parent.
+    ':checked' et ':not(:checked)' permettent d'accéder au statut de la checkbox
+*/
+[value="poesie"]:checked ~ .items .item[data-category="poesie"],
+[value="metaphore"]:checked ~ .items .item[data-category="metaphore"],
+[value="fanfic"]:checked ~ .items .item[data-category="fanfic"] 
+{
+    background: yellow;
+    display: block;
+    animation: fadeIn .25s;
+}
+
+[value="poesie"]:not(:checked) ~ .items .item[data-category="poesie"],
+[value="metaphore"]:not(:checked) ~ .items .item[data-category="metaphore"],
+[value="fanfic"]:not(:checked) ~ .items .item[data-category="fanfic"] 
+{
+    animation: fadeOut .25s;
+    display: none;
+}

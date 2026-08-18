@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkbox Filters</title>
+        <!--google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <!--Link to css-->
+        <link rel="stylesheet" href="css/checkboxFilterStyle.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="InviteForm.html">Invite Form</a>
+                    </li>
+                    <li>
+                        <a href="CheckboxFilter.html">Checkbox Filters</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#">
+                            <i class="fas fa-user"></i> Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- code from https://codepen.io/dereksheppard/pen/LYVWpoE -->
+        <section class="checkboxFilter">
+            <div class="filtersBar">
+                <!-- Checkboxes -->
+                <h1 class="text-xl text-left">Filtres</h1>
+                <label for="poesie">Poésie</label> 
+                <input name="filter" class="input" type="checkbox" id="poesie" value="poesie" checked>
+                
+                <label for="metaphore">Métaphore</label> 
+                <input name="filter" class="input" type="checkbox" id="metaphore" value="metaphore" checked>
+                
+                <label for="fanfic">Fan-Fiction</label> 
+                <input name="filter" class="input" type="checkbox" id="fanfic" value="fanfic" checked>
+            </div>                
+            <!-- 
+                Elements a filtrer 
+                
+                On utilise 'aria-live' pour indiquer qu'une section de la page va être update dynamiquement 
+                et 'aria-live=polite' pour dire que la section attendra que l'utilisateur finissent sa tache courante avant d'être update
+                
+                On donne a chaque element (ou items en anglais) la classe général 'item' ainsi qu'une classe spécifique a la catégorie de l'élément. 
+                On donne aussi une 'data-category' qui sert a différencier la catégorie de l'element dans le css
+
+                Ici pour simplifier les éléments contiennent simplement du texte mais on peut imaginer que c'est le titre de l'élement et que cliquer dessus ouvre le texte complet
+            -->
+            <div class="items" aria-live="polite">
+                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°1</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore intéressante</p></div>
+                <div class="item fanfic" data-category="fanfic"><p class="text-lg">FCK PLTVR</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°2</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore intriguante</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°3</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore surprenante</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°4</p></div>
+                <div class="item metaphore" data-category="metaphore"><p class="text-lg">Métaphore alambiquée</p></div>
+                <div class="item poesie" data-category="poesie"><p class="text-lg">Poéme n°5</p></div>
+            </div>
+        </section>
+    </body>
+</html>
