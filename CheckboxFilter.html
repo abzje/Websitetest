@@ -5,8 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Checkbox Filters</title>
-        <!--google font-->
-        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
         <!--Link to css-->
         <link rel="stylesheet" href="css/checkboxFilterStyle.css">
         <link rel="stylesheet" href="css/style.css">
@@ -66,8 +64,15 @@
             -->
             <div class="items" aria-live="polite">
                 <div class="item poesie" data-category="poesie">
-                    <p class="text-md">Poéme n°1</p>
-                    <p class="text-sm">La première ligne du poème pour donner envie de lire la suite</p>
+                    <details>
+                        <summary class="text-md">Poéme n°1</summary>
+                        <p class="text-sm">
+                            Au fin fond de la nuit, j'écris ces quelques rimes. <br>
+                            Mon ennui a poussé, on en voit plus la cime. <br>
+                            Ses branches longues et feuillues mais ne porte pas de fruit. <br>
+                            Et je reste le regard vide, allongé dans mon lit.
+                        </p>
+                    </details>
                 </div>
                 <div class="item metaphore" data-category="metaphore"><p class="text-md">Métaphore intéressante</p></div>
                 <div class="item fanfic" data-category="fanfic"><p class="text-md">FCK PLTVR</p></div>

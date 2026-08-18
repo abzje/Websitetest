@@ -67,3 +67,58 @@
     animation: fadeOut .25s;
     display: none;
 }
+
+/* 
+    Je te rajoute les classes qui ne sont pas importante pour cette exemple mais qui sont des classes utilitaire que j'utilise dans le reste de mon site de test,
+    elle sont dans un autre css mais je me dit que si tu te pose des questions sur les classes que tu voit dans le html et bien voila la réponse
+
+    -- NAVBAR --
+    .navbar{
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+    }
+
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .main-menu ul {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px;
+        display: block;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    .navbar ul li:last-child a{
+        margin-left: 10px;
+    }
+
+    .navbar ul li a i{
+        margin-right: 10px;
+    }
+
+    -- TEXT SIZES --
+    .text-md{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+    }
+
+    .text-sm{
+        font-size: 0.9rem;
+        line-height: 1.4;
+        font-weight: normal;
+        margin: 10px 0 5px;
+    }
+*/
